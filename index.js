@@ -54,12 +54,12 @@ const fetchData = async () => {
         }
 
         else {
-            console.log("Comando no reconocido. Usá uno de estos:");
-            console.log("npm run start GET products");
-            console.log("npm run start GET products 15");
-            console.log("npm run start GET products/15");
-            console.log("npm run start POST products Remera 300 ropa");
-            console.log("npm run start DELETE products 7");
+            console.log(`Comando no reconocido. Usá uno de estos:
+- npm run start GET products
+- npm run start GET products <productId>
+- npm run start POST products <title> <price> <category>
+- npm run start DELETE products <productId>
+`);
         }
     } catch (error) {
         console.error(error);
